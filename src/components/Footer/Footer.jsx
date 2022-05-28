@@ -11,7 +11,9 @@ const Footer = () => {
     <div className="footer">
       <img src={Wave} alt="" style={{ width: "100%" }} />
       <div className="f-content">
-        <span>ak0735000@gmail.com</span>
+        <span>ak0735000@gmail.com
+          <p>Mobile:9798529442</p>
+        </span>
         <div className="f-icons">
         
           {/* <Facebook color="white" size={"3rem"} /> */}
