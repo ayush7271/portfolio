@@ -77,3 +77,20 @@
         height: 70px;
     }
   }
+  .mdiv{
+      height: 400px;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      justify-content: space-around;
+  }
+  .div1{
+    height:400px;
+    width: 285px;
+    background-color: rgb(159, 151, 151);
+  }
+  .div2{
+    height:40px;
+    width: 585px;
+    background-color: rgb(255, 255, 255);
+  }

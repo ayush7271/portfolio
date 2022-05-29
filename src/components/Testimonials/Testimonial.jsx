@@ -5,6 +5,7 @@ import "swiper/css";
 
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
+import ayush1 from'../../img/ayush1.jpg'
 import profilePic1 from "../../img/profile1.jpg";
 import profilePic2 from "../../img/profile2.jpg";
 import profilePic3 from "../../img/profile3.jpg";
@@ -36,32 +37,22 @@ const Testimonial = () => {
 
   return (
     <div className="t-wrapper" id="testimonial">
-      <div className="t-heading">
-        <span>Clients always get </span>
-        <span>Exceptional Work </span>
-        <span>from me...</span>
-      <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
-      <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
+      <h1 style={{fontSize:"50px",color:"orange",marginTop:"-100px"}}>About</h1>
+      <div className="mdiv">
 
+        <div className="div1">
+          <img style={{border:"4px",borderColor:"black",width:"275px",height:"389px",marginTop:"6px",marginLeft:"5px"}} src={ayush1} alt="" />
+        </div>
+        <div className="div2">
+          <p  style={{color:"grey"}}>
+            <h1 style={{color:"grey"}}>Hi there! I am <span style={{fontWeight:"bold"}}>Ayush Kumar</span></h1>
+            Frontend Developer with hands on experience in web designing and development With Technical Skill React Js, Redux, Node.JS, HTML5, JavaScript and Keen to learn more and more.
+            Looking forward to work in challanging environment where I can push my limit to a greater extend.
+          </p>
+        </div>
       </div>
-      <Swiper
-        // install Swiper modules
-        modules={[Pagination]}
-        slidesPerView={1}
-        pagination={{ clickable: true }}
-      >
-        {clients.map((client, index) => {
-          return (
-            <SwiperSlide key={index}>
-              <div className="testimonial">
-                <img src={client.img} alt="" />
-                <span>{client.review}</span>
-              </div>
-            </SwiperSlide>
-          );
-        })}
-      </Swiper>
-    </div>
+
+        </div>
   );
 };
 
