@@ -45,7 +45,7 @@ const Testimonial = () => {
         </div>
         <div className="div2">
           <p  style={{color:"grey"}}>
-            <h1 style={{color:"grey"}}>Hi there! I am <span style={{fontWeight:"bold"}}>Ayush Kumar</span></h1>
+            <h1>Hi there! I am <span style={{fontWeight:"bold"}}>Ayush Kumar</span></h1>
             Frontend Developer with hands on experience in web designing and development With Technical Skill React Js, Redux, Node.JS, HTML5, JavaScript and Keen to learn more and more.
             Looking forward to work in challanging environment where I can push my limit to a greater extend.
           </p>
