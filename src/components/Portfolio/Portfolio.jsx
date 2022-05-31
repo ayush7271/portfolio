@@ -13,7 +13,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
       {/* heading */}
-      <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
+      <span style={{color: darkMode?'white': '', marginTop:"-80px"}}>Recent Projects</span>
       <span>Portfolio</span>
 
       {/* slider */}
@@ -26,17 +26,17 @@ const Portfolio = () => {
         <SwiperSlide>
           <img src={rodan} alt="" />
           <p>Cloning of Rodan+Field</p>
-          <a style={{textDecoration:"none"}} href="https://github.com/JAGRATIR/Rodanandfields">click me</a>
+          <a style={{textDecoration:"none"}} href="https://github.com/JAGRATIR/Rodanandfields" target="_blank" >click me</a>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Ajio} alt="" />
           <p>Cloning of Ajio</p>
-          <a style={{textDecoration:"none"}}  href="https://github.com/Shreyansh12Gupta/AJIO_CLONE">click me</a>
+          <a style={{textDecoration:"none"}}  href="https://github.com/Shreyansh12Gupta/AJIO_CLONE" target="_blank" >click me</a>
         </SwiperSlide>
         <SwiperSlide>
           <img src={geekbuying} alt="" />
           <p>Cloning of Geekbuying</p>
-          <a style={{textDecoration:"none"}}  href="https://github.com/abhinavBisht94/geekbuying-clone/tree/main/geekbuying">click me</a>
+          <a style={{textDecoration:"none"}}  href="https://github.com/abhinavBisht94/geekbuying-clone/tree/main/geekbuying"target="_blank" >click me</a>
         </SwiperSlide>
         {/* <SwiperSlide>
           <img src={HOC} alt="" />

@@ -52,7 +52,7 @@ const Intro = () => {
       <div className="i-right">
         {/* <img src={Vector1} alt="" /> */}
         {/* <img src={Vector2} alt="" /> */}
-        <img style={{justifyContent:"center",marginLeft:"100px",borderRadius:"10px"}} src={boy} alt="" />
+        <img  style={{ width:"700px",justifyContent:"center",marginLeft:"80px",borderRadius:"10px"}} src={boy} alt="" />
         {/* animation */}
         <motion.img
           initial={{ left: "-36%" }}

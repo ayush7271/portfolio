@@ -5,6 +5,9 @@
   margin-bottom: 2rem;
   top: 0;
 }
+a{
+  text-decoration: none;
+}
 .n-left {
   flex: 1;
   align-items: center;
