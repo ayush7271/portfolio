@@ -11,6 +11,7 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
 import { themeContext } from "./Context";
+import { Navigate, Route, Routes, useNavigate } from "react-router-dom";
 // import { About } from "./components/About/About";
 function App() {
   const theme = useContext(themeContext);
@@ -24,16 +25,27 @@ function App() {
       }}
     >
       <Navbar />
-      <Intro />
+      <Routes>
+      <Route path="" element={<Intro/>} />
+      <Route path="/services" element={<Services/>} />
+      <Route path="/experience" element={<Works/>} />
+      <Route path="/Portfolio" element={<Portfolio/>} />
+      <Route path="/home" element={<Intro/>} />
+      <Route path="/techStack" element={<Techstack/>} />
+      <Route path="/about" element={<Testimonial/>} />
+      <Route path="/contact" element={<Contact/>} />
+      </Routes>
+      <Footer/>
+      {/* <Intro />
       <Services />
       {/* <Experience /> */}
-      <Works />
+      {/* <Works />
       <Portfolio />
-      <Techstack/>
+      <Techstack/> */}
       {/* <About/> */}
-      <Testimonial />
+      {/* <Testimonial />
       <Contact />
-      <Footer />
+      <Footer /> */} 
     </div>
   );
 }

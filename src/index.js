@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import Intro from './components/Intro/Intro';
+import Navbar from './components/Navbar/Navbar';
 import { ThemeProvider } from './Context';
 
+
 ReactDOM.render(
+  <BrowserRouter>
   <ThemeProvider>
-    <App />
-  </ThemeProvider>,
+   <App />
+     
+     {/* <Navbar/>
+     <Intro/> */}
+  </ThemeProvider>
+     </BrowserRouter>
+  ,
+
+
+
+
   document.getElementById('root')
 );
 

@@ -1,8 +1,8 @@
 import React from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
-import { Link } from "react-scroll";
-const navbar = () => {
+import { Link } from "react-router-dom";
+const Navbar = () => {
   return (
     <div className="n-wrapper" id="Navbar">
       {/* left */}
@@ -15,27 +15,32 @@ const navbar = () => {
         <div className="n-list">
           <ul style={{ listStyleType: "none" }}>
             <li>
-              <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
+              <Link  to="" spy={true} smooth={true}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to="services" spy={true} smooth={true}>
+              <Link to="services">
                 Services
               </Link>
             </li>
             <li>
-              <Link to="works" spy={true} smooth={true}>
+              <Link to="experience" >
                 Experience
               </Link>
             </li>
             <li>
-              <Link to="portfolio" spy={true} smooth={true}>
+              <Link to="portfolio" >
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link to="testimonial" spy={true} smooth={true}>
+              <Link to="techstack" >
+                TechStack
+              </Link> 
+            </li>
+            <li>
+              <Link to="about" >
                 About
               </Link> 
             </li>
@@ -49,4 +54,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;
