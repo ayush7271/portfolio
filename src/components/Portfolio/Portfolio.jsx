@@ -26,17 +26,25 @@ const Portfolio = () => {
         <SwiperSlide>
           <img src={rodan} alt="" />
           <p>Cloning of Rodan+Field</p>
-          <a style={{textDecoration:"none"}} href="https://github.com/JAGRATIR/Rodanandfields" target="_blank" >click me</a>
+          <p>Rodan & Fields is an American manufacturer and multi-level marketing company specializing in skincare products</p>
+          <p>Deployment Link: <a href="https://rodanfields.netlify.app/" target="_blank">RodanField</a></p>
+          <p>GitHub Link: <a style={{textDecoration:"none"}} href="https://github.com/JAGRATIR/Rodanandfields" target="_blank" >click me</a></p>
         </SwiperSlide>
         <SwiperSlide>
           <img src={Ajio} alt="" />
           <p>Cloning of Ajio</p>
-          <a style={{textDecoration:"none"}}  href="https://github.com/Shreyansh12Gupta/AJIO_CLONE" target="_blank" >click me</a>
+          <p>AJIO, a fashion and lifestyle brand, is Reliance Retail's digital commerce initiative and is the ultimate fashion destination for styles that are handpicked, on trend and at prices that are the best you'll find anywhere.</p>
+          <p>Deployment Link: <a href="https://rad-wisp-02436f.netlify.app/" target="_blank">Ajio</a></p>
+         <p>GitHub Link: <a style={{textDecoration:"none"}}  href="https://github.com/Shreyansh12Gupta/AJIO_CLONE" target="_blank" >click me</a>
+           </p> 
+        
         </SwiperSlide>
         <SwiperSlide>
           <img src={geekbuying} alt="" />
           <p>Cloning of Geekbuying</p>
-          <a style={{textDecoration:"none"}}  href="https://github.com/abhinavBisht94/geekbuying-clone/tree/main/geekbuying"target="_blank" >click me</a>
+          <p>GeekBuying was built to offer the coolest gadgets to the whole world at incredible low prices. And we have realized that online shopping has been very popular world widely but all the same story, sometimes kind of bored, lots of funs in real shopping are missin</p>
+          <p>Deployment Link: <a href="https://geekbuying-clone.netlify.app" target="_blank">geekbuying</a></p>
+         <p>GitHub Link: <a style={{textDecoration:"none"}}  href="https://github.com/abhinavBisht94/geekbuying-clone/tree/main/geekbuying"target="_blank" >click me</a></p>  
         </SwiperSlide>
         {/* <SwiperSlide>
           <img src={HOC} alt="" />
