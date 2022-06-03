@@ -34,9 +34,11 @@ const Intro = () => {
             and development, producting the Quality work
           </span>
         </div>
-        <Link to="contact" smooth={true} spy={true}>
-          <button className="button i-button">Hire me</button>
-        </Link>
+        {/* <Link to="contact" smooth={true} spy={true}> */}
+         {/* <a href="/contact"> */}
+            {/* <button className="button i-button">Hire me</button> */}
+           {/* </a> */}
+        {/* </Link> */}
         {/* social icons */}
         <div className="i-icons">
           <a href="https://github.com/ayush7271">

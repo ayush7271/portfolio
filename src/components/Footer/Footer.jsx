@@ -9,11 +9,8 @@ import Gitub from "@iconscout/react-unicons/icons/uil-github";
 const Footer = () => {
   return (
     <div className="footer">
-      <img src={Wave} alt="" style={{ width: "100%" }} />
+      <img src={Wave} alt="" style={{ width: "100%",height:"400px" }} />
       <div className="f-content">
-        <span>ak0735000@gmail.com
-          <p>Mobile:9798529442</p>
-        </span>
         <div className="f-icons">
         
           {/* <Facebook color="white" size={"3rem"} /> */}
@@ -24,6 +21,7 @@ const Footer = () => {
             <img style={{width:"50px"}} src={LinkedIn} alt="" />
             </a>
         </div>
+        <span>©Ayush Kumar 2022 </span>
       </div>
     </div>
   );
