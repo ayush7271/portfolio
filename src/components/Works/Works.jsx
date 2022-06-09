@@ -36,7 +36,7 @@ const Works = () => {
             ispum is simpley dummy text of printing
           </spane> */}
           <Link to="contact" smooth={true} spy={true}>
-            <button className="button s-button">Hire Me</button>
+            {/* <button className="button s-button">Hire Me</button> */}
           </Link>
           <div
             className="blur s-blur1"
