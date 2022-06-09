@@ -33,13 +33,31 @@
     border: 1px solid var(--orange);
     color: var(--orange);
   }
+  .hamburger{
+    display: none;
+  }
   @media screen and (max-width: 480px) {
     .App {
       padding: 0.5rem 1rem;
 
+    
+    }
+    .hamburger{
+      display: block;
+      position: absolute;
+    }
+    .awesome{
+      margin-top: 100px;
+    }
+    
+    .n-wrapper
+    {
+      margin-bottom: 
+      40px;
     }
   }
+ 
 
-  
+
 
   

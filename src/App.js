@@ -18,13 +18,14 @@ function App() {
   const darkMode = theme.state.darkMode;
   return (
     <div
-      className="App"
-      style={{
-        background: darkMode ? "black" : "",
-        color: darkMode ? "white" : "",
-      }}
+    className="App"
+    style={{
+      background: darkMode ? "black" : "",
+      color: darkMode ? "white" : "",
+    }}
     >
-      <Navbar />
+    <Navbar />
+
       <Routes>
       <Route path="" element={<Intro/>} />
       <Route path="/services" element={<Services/>} />

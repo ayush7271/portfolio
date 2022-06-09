@@ -2,10 +2,12 @@ import React from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import { Mobile } from "./mobile";
 const Navbar = () => {
   return (
     <div className="n-wrapper" id="Navbar">
       {/* left */}
+    <Mobile/>
       <div className="n-left">
         <div className="n-name">Ayush</div>
         <Toggle />
@@ -46,11 +48,22 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+
+
+
+
+
+
         <Link to="contact" spy={true} smooth={true}>
         <button className="button n-button">Contact</button>
         </Link>
       </div>
     </div>
+
+
+
+
+
   );
 };
 

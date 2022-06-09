@@ -2,6 +2,8 @@ import React from "react";
 import "./Testimonial.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Gitub from "@iconscout/react-unicons/icons/uil-github";
+import LinkedIn from "../../img/linkedin.png";
 
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
@@ -12,32 +14,11 @@ import profilePic3 from "../../img/profile3.jpg";
 import profilePic4 from "../../img/profile4.jpg";
 
 const Testimonial = () => {
-  const clients = [
-    {
-      img: profilePic1,
-      review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
-    },
-    {
-      img: profilePic2,
-      review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
-    },
-    {
-      img: profilePic3,
-      review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
-    },
-    {
-      img: profilePic4,
-      review:
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex officiis molestiae quod tempora laudantium, cumque error a nisi placeat quae exercitationem, maiores reiciendis! Eaque dicta minima, iure maiores dolorum sed.",
-    },
-  ];
+ 
 
   return (
-    <div className="t-wrapper" id="testimonial">
-      <h1 style={{fontSize:"50px",color:"orange",marginTop:"-100px"}}>About</h1>
+    <div className="t-wrapper">
+      <h1 className="about" style={{fontSize:"50px",color:"orange"}}>About</h1>
       <div className="mdiv">
 
         <div className="div1">
@@ -49,6 +30,16 @@ const Testimonial = () => {
             Frontend Developer with hands on experience in web designing and development With Technical Skill React Js, Redux, Node.JS, HTML5, JavaScript and Keen to learn more and more.
             Looking forward to work in challanging environment where I can push my limit to a greater extend.
           </p>
+
+        <div className="contact">
+          <p>Contact me: </p>
+        <a href="https://github.com/ayush7271">
+            <Gitub size={"3rem"} />
+            </a>
+            <a href="https://www.linkedin.com/in/ayush-kumar-12129613a/">
+            <img style={{width:"50px"}} src={LinkedIn} alt="" />
+            </a>
+        </div>
         </div>
       </div>
 

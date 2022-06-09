@@ -51,3 +51,15 @@ a{
     display: none;
   }
 }
+#hamburger-icon div{
+  width:35px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+#hamburger-icon{
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}

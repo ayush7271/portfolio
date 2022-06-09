@@ -1,6 +1,6 @@
 .t-wrapper{
     padding:  0 3rem 0 3rem;;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,80 +10,22 @@
     position: relative;
     
 }
-.t-heading{
-    align-self: start;
-}
-.t-heading>*{
-    font-size: 2rem;
-    font-weight: bold;
-}
-.t-heading span:nth-of-type(2){
-    color: var(--orange);
-}
-
-.t-blur1{
-    left: 38rem;
-    top: 16rem;
-}
-.t-blur2{
-    top: 9rem;
-    left: 0;
-}
-.testimonial{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 2rem;
-    width: 30rem;
-    height: 12rem;
-    /* styles same as work.css */
-    background: rgba(255, 255, 255, 0.26);
-    border: 7px solid var(--blueCard);
-    box-shadow: var(--boxShadow);
-    border-radius: 20px;
-}
-.testimonial>img{
-    width: 6rem;
-    height: 6rem;
-    border-radius: 100%;
-}
-.testimonial>span{
-    color: var(--gray);
-}
 
 
-/* slider */
-.t-wrapper .swiper {
-    width: 100%;
-    height: 70%;
-}
 
-.t-wrapper .swiper-slide{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.t-wrapper .swiper-pagination-bullet-active{
-    background: var(--orange);
-}
 
-@media screen and (max-width: 480px){
-    .t-wrapper{
-        padding: 0;
-    }
-    .testimonial>img{
-        width: 70px;
-        height: 70px;
-    }
-  }
+
+
+
+
+  
   .mdiv{
       height: 400px;
       width: 100%;
       /* background-color: rgb(12, 6, 6); */
-      display: flex;
-      justify-content: space-around;
+      display:grid;
+      grid-template-columns: auto auto;
   }
   .div1{
     height:400px;
@@ -94,4 +36,39 @@
     height:40px;
     width: 585px;
     /* background-color: rgb(255, 255, 255); */
+  }
+  .contact{
+      height: 150px;
+      width: 100%;
+      /* background-color: rgb(36, 34, 34); */
+  }
+
+  .about{
+      margin-top: -100px;
+  }
+
+
+
+@media screen and (max-width: 480px){
+   .about{
+       margin-top:100px;
+   }
+
+    .mdiv{
+         margin-left:-40px;
+         /* margin-top: 100px; */
+        height:1000px;
+    
+        width: 100%;
+        /* background-color: rgb(12, 6, 6); */
+        display:grid;
+        grid-template-columns: auto;
+        flex-wrap: wrap;
+    }
+    .div2{
+        height:1400px;
+        width: auto;
+        /* background-color: rgb(255, 255, 255); */
+      }
+    
   }

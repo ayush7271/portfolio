@@ -1,0 +1,16 @@
+.bar{
+   display: block;
+   width: 25px;
+   height: 3px;
+   margin: 4px auto;
+   background-color: rgb(145, 130, 130);
+   
+   
+   /* -webkit-transition: all 0.3s ease-in-out; */
+}
+li{
+    margin-bottom:20px;
+}
+.hamburger{
+    cursor: pointer;
+}
