@@ -1,7 +1,7 @@
 import React from "react";
 import Toggle from "../Toggle/Toggle";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { Mobile } from "./mobile";
 const Navbar = () => {
   return (
@@ -17,32 +17,28 @@ const Navbar = () => {
         <div className="n-list">
           <ul style={{ listStyleType: "none" }}>
             <li>
-              <Link  to="" spy={true} smooth={true}>
+            <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to="services">
-                Services
+            {/* <Link to="services" spy={true} smooth={true}>
+                Serivces
+              </Link> */}
+            </li>
+            <li>
+            <Link to="works" spy={true} smooth={true}>
+                Techstack
               </Link>
             </li>
             <li>
-              <Link to="experience" >
-                Experience
+            <Link to="portfolio" spy={true} smooth={true}>
+                Project
               </Link>
             </li>
+           
             <li>
-              <Link to="portfolio" >
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link to="techstack" >
-                TechStack
-              </Link> 
-            </li>
-            <li>
-              <Link to="about" >
+              <Link  to="about" spy={true} smooth={true} >
                 About
               </Link> 
             </li>

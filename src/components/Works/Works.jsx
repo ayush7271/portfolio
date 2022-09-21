@@ -1,14 +1,18 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import chegg from "../../img/chegg.jpg";
-import Facebook from "../../img/Facebook.png";
+
 import { themeContext } from "../../Context";
-import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
+
+
+import html from "../../img/html.png";
+import CSS from "../../img/CSS.png";
+import redux from "../../img/REDUX.png";
+import boot from "../../img/boot.png";
+import javascript from "../../img/javascript.png";
+import node from "../../img/node.png";
+import react from "../../img/react.png";  
+import cplus from "../../img/cplus.png";  
+
 const Works = () => {
   // context
   const theme = useContext(themeContext);
@@ -17,63 +21,44 @@ const Works = () => {
   // transition
   return (
     <div className="works" id="works">
-      {/* left side */}
-      <div className="w-left">
-        <div className="awesome">
-          {/* dark Mode */}
-          <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
-          </span>
-          <span>Brands & Clients</span>
-          {/* <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
-            <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
-            <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
-          </spane> */}
-          <Link to="contact" smooth={true} spy={true}>
-            {/* <button className="button s-button">Hire Me</button> */}
-          </Link>
-          <div
-            className="blur s-blur1"
-            style={{ background: "#ABF1FF94" }}
-          ></div>
-        </div>
+    <div className='container'>
+      <p className='container1'>Tech Stack</p>
 
-        {/* right side */}
-      </div>
-      <div className="w-right">
-        <motion.div
-          initial={{ rotate: 45 }}
-          whileInView={{ rotate: 0 }}
-          viewport={{ margin: "-40px" }}
-          transition={{ duration: 3.5, type: "spring" }}
-          className="w-mainCircle"
-        >
-          {/* <div className="w-secCircle">
-            <img src={Upwork} alt="" />
-          </div> */}
-           {/* <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
-          </div> */}
-          <div className="w-secCircle">
-            <img src={chegg} alt="" />
-          </div>{" "}
-          {/* <div className="w-secCircle">
-            <img src={Shopify} alt="" />
-          </div> */}
-          {/* <div className="w-secCircle">
-            <img src={Facebook} alt="" />
-          </div>  */}
-        </motion.div>
-        {/* background Circles */}
-        <div className="w-backCircle blueCircle"></div>
-        <div className="w-backCircle yellowCircle"></div>
-      </div>
+    <div className='Techstack'>
+   
+      <div className='html'>
+        <img src={html} alt="" />
+        <p>HTML5</p>
+        </div>
+      <div className='github'>
+        <img src={CSS} alt="" />
+        <p>CSS</p>
+       </div>
+      <div className='boot'>
+        <img src={boot} alt="" />
+        <p>Bootstrap</p></div>
+      <div className='javascript'>
+        <img src={javascript} alt="" />
+<p>javascript</p>
+        </div>
+      <div className='nodejs'>
+        <img src={node} alt="" />
+        <p>NodeJS</p>
+        </div>
+      <div className='react'>
+        <img src={react} alt="" />
+        <p>React</p>
+        </div>
+        <div className='react'>
+        <img src={redux} alt="" />
+        <p>Redux</p>
+        </div>
+      <div className='cplus'>
+        <img src={cplus} alt="" />
+        <p>c++</p>
+        </div>
+    </div>  
+    </div>
     </div>
   );
 };

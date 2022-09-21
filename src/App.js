@@ -5,8 +5,8 @@ import "./App.css";
 import Experience from "./components/Experience/Experience";
 import Works from "./components/Works/Works";
 import Portfolio from "./components/Portfolio/Portfolio";
-import { Techstack } from "./components/Techstack/Techstack";
-import Testimonial from "./components/Testimonials/Testimonial";
+
+import About from "./components/Testimonials/About";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import { useContext } from "react";
@@ -25,28 +25,18 @@ function App() {
     }}
     >
     <Navbar />
+    <Intro/>
+    {/* <Services/> */}
 
-      <Routes>
-      <Route path="" element={<Intro/>} />
-      <Route path="/services" element={<Services/>} />
-      <Route path="/experience" element={<Works/>} />
-      <Route path="/Portfolio" element={<Portfolio/>} />
-      <Route path="/home" element={<Intro/>} />
-      <Route path="/techStack" element={<Techstack/>} />
-      <Route path="/about" element={<Testimonial/>} />
-      <Route path="/contact" element={<Contact/>} />
-      </Routes>
+    <Works/>
+    <Portfolio/>
+
+    <About/>
+    <Contact/>
+    
+    
       <Footer/>
-      {/* <Intro />
-      <Services />
-      {/* <Experience /> */}
-      {/* <Works />
-      <Portfolio />
-      <Techstack/> */}
-      {/* <About/> */}
-      {/* <Testimonial />
-      <Contact />
-      <Footer /> */} 
+      
     </div>
   );
 }
