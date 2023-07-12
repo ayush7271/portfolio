@@ -26,7 +26,7 @@ function App() {
     >
     <Navbar />
     <Intro/>
-    {/* <Services/> */}
+    <Services/>
 
     <Works/>
     <Portfolio/>

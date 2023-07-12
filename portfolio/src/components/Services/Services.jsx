@@ -6,7 +6,7 @@ import Glasses from "../../img/glasses.png";
 import Humble from "../../img/humble.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import Resume from './resume.pdf';
+import Resume from "./resume.pdf";
 
 const Services = () => {
   // context
@@ -20,24 +20,25 @@ const Services = () => {
   };
 
   return (
-    <div className="services" id="services">
-      {/* left side */}
-      <div className="awesome">
-        {/* dark mode */}
-        {/* <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
-        <span>services</span> */}
-        {/* <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
-        </spane> */}
-        <a href={Resume} download>
-          <button className="button s-button">Download CV</button>
-        </a>
-       
-       
+    <div className="experience" id="services">
+        <div className="achievement">
+          {/* darkMode */}
+          <div className="circle" style={{color: darkMode?'var(--orange)':''}}>1+</div>
+        <span  style={{color: darkMode?'white':''}}>years </span>
+        <span>Experience</span>
+        </div>
+        <div className="achievement">
+          <div className="circle" style={{color: darkMode?'var(--orange)':''}}>20+</div>
+        <span  style={{color: darkMode?'white':''}}>completed </span>
+        <span>Projects</span>
+        </div>
+        <div className="achievement">
+          <div className="circle" style={{color: darkMode?'var(--orange)':''}}>1+</div>
+        <span  style={{color: darkMode?'white':''}}>companies </span>
+        <span>Work</span>
+        </div>
       </div>
-    </div>
+
   );
 };
 
